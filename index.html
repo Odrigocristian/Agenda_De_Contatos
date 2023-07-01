@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+    <div class="container">
+        <h1>Agenda de Contatos</h1>
+
+        <form id="addContactForm">
+        <div class="form-group">
+            <label for="nameInput">Nome:</label>
+            <input type="text" id="nameInput" placeholder="Nome" required>
+        </div>
+        <div class="form-group">
+            <label for="phoneInput">Telefone:</label>
+            <input type="text" id="phoneInput" placeholder="Telefone" required>
+        </div>
+        <div class="button-group">
+            <button type="submit">Adicionar Contato</button>
+        </div>
+        </form>
+
+        <div class="search-group">
+        <label for="searchInput">Consultar por nome:</label>
+        <input type="text" id="searchInput" placeholder="Digite o nome">
+        </div>
+
+        <table id="contactsTable">
+        <thead>
+            <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody id="contactsList">
+        </tbody>
+        </table>
+    </div>
+    
+    <script src="main.js"></script>
+    </body>
+    </html>
